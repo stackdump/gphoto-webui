@@ -24,7 +24,7 @@ try{
 	switch($action){
 
 		case "takePicture":
-			exec ("gphoto2 --capture-image-and-download --filename \"./images/capture-%Y%m%d-%H%M%S-%03n.%C\"",$output);
+			exec ("gphoto2 --capture-image-and-download --force-overwrite --filename \"./images/capture-target.jpg\"",$output);
 			echo json_encode(true);					
 			break;
 	
@@ -97,5 +97,3 @@ try{
 } catch (Exception $e) { //else resize the image...
 	
 }
-
-?>

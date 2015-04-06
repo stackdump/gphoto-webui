@@ -19,6 +19,7 @@ function takePicture(){
 		dataType : "json",
 		success: function(data){
 			$.mobile.loading( 'hide');
+                        location.reload();
 		},
 	});
 }

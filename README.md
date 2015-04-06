@@ -1,3 +1,13 @@
+Mon Apr  6 11:04:56 CDT 2015
+============================
+
+Modified to overwrite the same target image every time.
+added to cron to startup on boot:
+
+
+    @reboot cd /home/pi/gphoto-webui && php5 -S 0.0.0.0:8000 &>/dev/null &
+
+
 gphoto-webui
 ============
 
